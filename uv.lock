@@ -541,12 +541,16 @@ dependencies = [
     { name = "pyhabitat" },
 ]
 
+[package.optional-dependencies]
+dev = [
+    { name = "uv" },
+]
+
 [package.dev-dependencies]
 dev = [
     { name = "build" },
     { name = "pyinstaller" },
     { name = "setuptools" },
-    { name = "uv" },
     { name = "wheel" },
 ]
 
@@ -554,14 +558,15 @@ dev = [
 requires-dist = [
     { name = "pipeline-eds", specifier = ">=0.4.20" },
     { name = "pyhabitat", specifier = ">=1.1.18" },
+    { name = "uv", marker = "python_full_version >= '3.8' and extra == 'dev'", specifier = ">=0.5.0" },
 ]
+provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "build", specifier = ">=1.0.0" },
     { name = "pyinstaller", marker = "python_full_version >= '3.8'", specifier = ">=6.0.0" },
     { name = "setuptools", specifier = ">=61.0.0" },
-    { name = "uv", marker = "python_full_version >= '3.8'", specifier = ">=0.5.0" },
     { name = "wheel" },
 ]
 
