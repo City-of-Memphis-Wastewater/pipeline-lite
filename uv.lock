@@ -258,14 +258,14 @@ wheels = [
 
 [[package]]
 name = "dworshak-access"
-version = "0.1.18"
+version = "0.1.19"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/44/57/551a21a6539ef8ed9d25bed7aab3e331a13518faa1e4ee7e157ab3ff0d5d/dworshak_access-0.1.18.tar.gz", hash = "sha256:f19a3500abdff868ea4f5fbc6da8f634343d4c19a886dcad42ff1ed05a4ea0f0", size = 5462, upload-time = "2026-01-19T20:49:50.904Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/b9/c76c8fdfa2a37fa5a52d6cbdc0e7bcbcfade94ce43fddcfc107546437ea9/dworshak_access-0.1.19.tar.gz", hash = "sha256:49938950327520cf64f7d77a6ee5c717d1ef1b869379850e4de5347bbee4377e", size = 5572, upload-time = "2026-01-19T21:28:22.789Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4a/11/cc35980cbdb7722251612fbc0b240a9819d83573e53d228707c40a4f6b63/dworshak_access-0.1.18-py3-none-any.whl", hash = "sha256:7ce705a796895225f4b692f57a9242b35bec5f46a7a6214aa67565c2c043e062", size = 5825, upload-time = "2026-01-19T20:49:49.522Z" },
+    { url = "https://files.pythonhosted.org/packages/51/4b/813c2c9d660f5b2f0f1b5d962e3118c9fd868e60ba108f7d32fc490713e1/dworshak_access-0.1.19-py3-none-any.whl", hash = "sha256:5eba42d4d6ef1057f6bad1e41d5f5e7a3f58c3c150d4730fc9ec33501f5c7660", size = 5940, upload-time = "2026-01-19T21:28:21.691Z" },
 ]
 
 [[package]]
@@ -421,7 +421,7 @@ wheels = [
 
 [[package]]
 name = "pipeline-eds"
-version = "0.4.21"
+version = "0.4.22"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backports-tarfile" },
@@ -444,9 +444,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/69/9c/f3833255013ec06c7aec17fa6229f24e23fc914e2699c23d6a59245e53bf/pipeline_eds-0.4.21.tar.gz", hash = "sha256:2fd3d8255c6027c198eab3d3c588c8737bb690d3a7d6f63f26f58dc1b8787144", size = 147163, upload-time = "2026-01-19T21:10:03.027Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/e7/c37d10114618b516c5339cf13d45bc314f74a5837c598680599d4745538f/pipeline_eds-0.4.22.tar.gz", hash = "sha256:4e331ae9f64bff203b4fc8e2ab4b5c35f7b4d3babef790927d03c458a2be57f5", size = 147161, upload-time = "2026-01-19T21:51:13.678Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f5/ec/a0faf9d11365b8d45989a2e60b64e3b801e0a029e8acdb8cb77262e04c09/pipeline_eds-0.4.21-py3-none-any.whl", hash = "sha256:207bccbdb28f754553ab5477ff3fbe4c06b9f8d11c6403c0f983890233b1781e", size = 173750, upload-time = "2026-01-19T21:10:01.148Z" },
+    { url = "https://files.pythonhosted.org/packages/ce/c0/75ea08a47cf3bdbdd8762c708063f81f92d1afcf3198084be4e6953a4f6f/pipeline_eds-0.4.22-py3-none-any.whl", hash = "sha256:7adac155fa41439fd516b3d4c1096e88d515f8176a74e3ee896c07b9fe84df26", size = 173753, upload-time = "2026-01-19T21:51:11.916Z" },
 ]
 
 [[package]]
@@ -473,8 +473,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pipeline-eds", specifier = ">=0.4.21" },
-    { name = "pyhabitat", specifier = ">=1.1.18" },
+    { name = "pipeline-eds", specifier = ">=0.4.22" },
+    { name = "pyhabitat", specifier = ">=1.1.21" },
     { name = "uv", marker = "python_full_version >= '3.8' and extra == 'dev'", specifier = ">=0.5.0" },
 ]
 provides-extras = ["dev"]
