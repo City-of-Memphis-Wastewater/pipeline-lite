@@ -19,8 +19,12 @@ dev = [
     "build>=1.0.0",
     "setuptools>=61.0.0",
     "wheel",
-    "uv>=0.5.0; python_version >= '3.8'",
     "pyinstaller>=6.0.0; python_version >= '3.8'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "uv>=0.5.0; python_version >= '3.8'"
 ]
 
 [project.scripts]
