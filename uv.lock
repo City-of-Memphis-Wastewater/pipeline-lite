@@ -502,7 +502,7 @@ wheels = [
 
 [[package]]
 name = "pipeline-eds"
-version = "0.4.13"
+version = "0.4.18"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backports-tarfile" },
@@ -527,17 +527,18 @@ dependencies = [
     { name = "urllib3" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c1/63/9cc016beeb9c55324699032d1240c7312593424032fcf3bba7ec16437fd2/pipeline_eds-0.4.13.tar.gz", hash = "sha256:0afee37482a54425c079b152c50eb9baaefd17a6db318cc3ede1eb202fc18539", size = 147211, upload-time = "2026-01-18T23:21:56.885Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/87/cf/14ff946d0f61ba200590745e1914fcf67c74f312c43dc37a3021fe2a49c6/pipeline_eds-0.4.18.tar.gz", hash = "sha256:cece9cd0042634cb3a7f2a545ec5a857195d481dcfd393062c8dd413433f0e11", size = 147654, upload-time = "2026-01-19T04:55:42.871Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/31/a6/038714f0d7d874f07755947109e907605c246daf56fa5329258b5f0836b7/pipeline_eds-0.4.13-py3-none-any.whl", hash = "sha256:cdd44e0fb03c718c7dd794e929f4091712af468173ecfce6f040061a25a54c47", size = 173447, upload-time = "2026-01-18T23:21:55.239Z" },
+    { url = "https://files.pythonhosted.org/packages/14/81/8a96b936c2537828f0921a580c12197002c712f69a330b06784acd355b5a/pipeline_eds-0.4.18-py3-none-any.whl", hash = "sha256:feb27d408cde2b6e7b852916285dcd0a8ec05ac1bd42a50a034a92d76c964898", size = 174040, upload-time = "2026-01-19T04:55:41.182Z" },
 ]
 
 [[package]]
 name = "pipeline-lite"
-version = "0.1.1"
+version = "0.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "pipeline-eds" },
+    { name = "pyhabitat" },
 ]
 
 [package.dev-dependencies]
@@ -550,7 +551,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pipeline-eds", specifier = ">=0.4.13" }]
+requires-dist = [
+    { name = "pipeline-eds", specifier = ">=0.4.18" },
+    { name = "pyhabitat", specifier = ">=1.1.18" },
+]
 
 [package.metadata.requires-dev]
 dev = [

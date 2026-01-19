@@ -1,11 +1,12 @@
 [project]
 name = "pipeline-lite"
-version = "0.1.1"
+version = "0.1.2"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pipeline-eds>=0.4.13",
+    "pipeline-eds>=0.4.18",
+    "pyhabitat>=1.1.18",
 ]
 
 [project.urls]
