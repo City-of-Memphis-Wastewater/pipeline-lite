@@ -1,5 +1,8 @@
 import pyhabitat as ph
 import keyring
+from pipeline_eds.security_and_config import SecurityAndConfig as SC
+from pipeline_eds.security_and_config import ForcePrompt
+
 # Replace these with the actual service and user names your library uses
 service = "pipeline-eds-api-Stiles" 
 user = "operator" 
@@ -16,5 +19,4 @@ print(f"ph.interactive_terminal_is_available() = {ph.interactive_terminal_is_ava
 print(f"ph.tkinter_is_available() = {ph.tkinter_is_available()}")
 print(f"ph.web_browser_is_available() = {ph.web_browser_is_available()}")
 
-from pipeline_eds.security_and_config import SecurityAndConfig as SC
-SC.prompt_for_value(prompt_message = "prompt_message", force_tkinter=True)
+SC.prompt_for_value(prompt_message = "prompt_message", force = ForcePrompt.GUI)
