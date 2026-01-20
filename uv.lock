@@ -421,7 +421,7 @@ wheels = [
 
 [[package]]
 name = "pipeline-eds"
-version = "0.4.22"
+version = "0.4.24"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backports-tarfile" },
@@ -444,9 +444,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1e/e7/c37d10114618b516c5339cf13d45bc314f74a5837c598680599d4745538f/pipeline_eds-0.4.22.tar.gz", hash = "sha256:4e331ae9f64bff203b4fc8e2ab4b5c35f7b4d3babef790927d03c458a2be57f5", size = 147161, upload-time = "2026-01-19T21:51:13.678Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/09/e3/3ffbb04e625833be535fcaae72d161dbd40057d3dd1bf7b05e48c9ecf4ee/pipeline_eds-0.4.24.tar.gz", hash = "sha256:aae33a32a9f12aeea4808c95740a8593edc271313d23c77dcfa8059a9f52b6e2", size = 147493, upload-time = "2026-01-20T00:06:06.623Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ce/c0/75ea08a47cf3bdbdd8762c708063f81f92d1afcf3198084be4e6953a4f6f/pipeline_eds-0.4.22-py3-none-any.whl", hash = "sha256:7adac155fa41439fd516b3d4c1096e88d515f8176a74e3ee896c07b9fe84df26", size = 173753, upload-time = "2026-01-19T21:51:11.916Z" },
+    { url = "https://files.pythonhosted.org/packages/2f/a4/1e38e0bb95179b12bfcace83596287375ab80acae40342e0a0e9aad9440e/pipeline_eds-0.4.24-py3-none-any.whl", hash = "sha256:da1e50277e29b79c2ec6267cf7f91927f2c8b72074accd8a2273d445f9aa4199", size = 173976, upload-time = "2026-01-20T00:06:04.727Z" },
 ]
 
 [[package]]
@@ -473,8 +473,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pipeline-eds", specifier = ">=0.4.22" },
-    { name = "pyhabitat", specifier = ">=1.1.21" },
+    { name = "pipeline-eds", specifier = ">=0.4.24" },
+    { name = "pyhabitat", specifier = ">=1.1.25" },
     { name = "uv", marker = "python_full_version >= '3.8' and extra == 'dev'", specifier = ">=0.5.0" },
 ]
 provides-extras = ["dev"]
@@ -520,11 +520,11 @@ wheels = [
 
 [[package]]
 name = "pyhabitat"
-version = "1.1.23"
+version = "1.1.25"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/6d/35/665c0450f10074b722544e5fab9772d5ba998b6b985880d99a5309a8b9b1/pyhabitat-1.1.23.tar.gz", hash = "sha256:2ad9a282fee92f5e5d3bc801472a8125772bc5762d8a02a6919170efacfc4b93", size = 27669, upload-time = "2026-01-19T04:24:19.878Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9e/42/54204f41f6a67b44485f606d227dc47d6cfa54b94c881a0fa8e3c1ef7e6e/pyhabitat-1.1.25.tar.gz", hash = "sha256:1b664c3d2dab513f99e84252769484f3ba44a789d2b55711310d8ce3c07c9217", size = 28136, upload-time = "2026-01-19T23:14:53.054Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ce/1b/5129515de4daeac076a9dcde97baf57679e0b55d4497b02277d274902e26/pyhabitat-1.1.23-py3-none-any.whl", hash = "sha256:9e78a615389d13dd4eea63b9822e866219b0af47a1baf93ab244a0f37dd2b389", size = 25848, upload-time = "2026-01-19T04:24:18.227Z" },
+    { url = "https://files.pythonhosted.org/packages/fa/f0/06db99b0731384952b9b43da61a9a9cd8c4df84dcded81679384d8bf8b27/pyhabitat-1.1.25-py3-none-any.whl", hash = "sha256:d6f4154054229687279333f60193c82cce2aaceb1dc78e9369906615b6d64623", size = 26376, upload-time = "2026-01-19T23:14:51.378Z" },
 ]
 
 [[package]]
