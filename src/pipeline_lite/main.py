@@ -29,16 +29,11 @@ for entry in data:
 # ------ Sending to a third party, RJN -----------
 
 service = "pipeline-rjn-clarity"
-TEST = da.get_secret(service = service, item = "test", fail = True)
-print(f"TEST = {TEST}")
-
 
 rjn_base_url = da.get_secret(service = service, item = "url", fail = True)
 print(f"rjn_base_url = {rjn_base_url}")
 rjn_client_id = da.get_secret(service = service, item = "username", fail = True)
 rjn_password = da.get_secret(service = service, item = "password", fail = True)
-print(f"rjn_client_id = {rjn_client_id}")
-print(f"rjn_password = {rjn_password}")
 
 crjn = ClientRjn(api_url = rjn_base_url) # u_rjn, p_rjn
 bool_session = crjn.login_to_session(
