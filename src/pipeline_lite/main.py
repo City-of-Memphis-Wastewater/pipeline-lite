@@ -6,12 +6,14 @@ from pipeline_eds.api.eds.soap.client import ClientEdsSoap
 
 import dworshak_access as da
 
-ceds = ClientEdsSoap() # u_eds, p_eds
-crjn = ClientRjn() # u_rjn, p_rjn
+import logging
+logger = logging.getLogger(__name__)
+
 
 # ------ Calling data from our two plant APIs (EDS) -----------
 """
 ## --- plant_name = "Maxson"
+ceds = ClientEdsSoap() # u_eds, p_eds
 tabular_data = ceds.soap_api_iess_request_tabular(plant_name = "Maxson", idcs = ["m100fi"])
 data = ceds.get_tabular_as_dict(tabular_data)
 for entry in data:
@@ -35,8 +37,11 @@ rjn_base_url = da.get_secret(service = service, item = "url", fail = True)
 print(f"rjn_base_url = {rjn_base_url}")
 rjn_client_id = da.get_secret(service = service, item = "username", fail = True)
 rjn_password = da.get_secret(service = service, item = "password", fail = True)
+print(f"rjn_client_id = {rjn_client_id}")
+print(f"rjn_password = {rjn_password}")
 
-bool_session = crjn.login_to_session(api_url = rjn_base_url,
+crjn = ClientRjn(api_url = rjn_base_url) # u_rjn, p_rjn
+bool_session = crjn.login_to_session(
     client_id = rjn_client_id,
     password = rjn_password)
 
