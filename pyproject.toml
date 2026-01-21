@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pipeline-eds>=0.4.24",
+    "pipeline-eds>=0.4.27",
     "pyhabitat>=1.1.25",
 ]
 
