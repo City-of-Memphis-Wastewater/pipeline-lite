@@ -454,6 +454,7 @@ name = "pipeline-lite"
 version = "0.1.4"
 source = { editable = "." }
 dependencies = [
+    { name = "dworshak-access" },
     { name = "pipeline-eds" },
     { name = "pyhabitat" },
 ]
@@ -473,6 +474,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "dworshak-access", specifier = ">=0.1.19" },
     { name = "pipeline-eds", specifier = ">=0.4.29" },
     { name = "pyhabitat", specifier = ">=1.1.25" },
     { name = "uv", marker = "python_full_version >= '3.8' and extra == 'dev'", specifier = ">=0.5.0" },

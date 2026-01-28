@@ -5,13 +5,12 @@ from pipeline_eds.api.rjn import ClientRjn
 from pipeline_eds.api.eds.soap.client import ClientEdsSoap 
 
 import dworshak_access as da
-
 import logging
 logger = logging.getLogger(__name__)
 
 
 # ------ Calling data from our two plant APIs (EDS) -----------
-"""
+
 ## --- plant_name = "Maxson"
 ceds = ClientEdsSoap() # u_eds, p_eds
 tabular_data = ceds.soap_api_iess_request_tabular(plant_name = "Maxson", idcs = ["m100fi"])
@@ -25,7 +24,7 @@ tabular_data = ceds.soap_api_iess_request_tabular(plant_name = "Stiles", idcs = 
 data = ceds.get_tabular_as_dict(tabular_data)
 for entry in data:
     print(f"Time: {entry['timestamp']} | Value: {entry.get('I-0300A')} | Quality: {entry.get('I-0300A_quality')}")
-"""
+
 # ------ Sending to a third party, RJN -----------
 
 service = "pipeline-rjn-clarity"
