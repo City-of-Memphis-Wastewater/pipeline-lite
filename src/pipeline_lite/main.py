@@ -18,12 +18,13 @@ data = ceds.get_tabular_as_dict(tabular_data)
 for entry in data:
     print(f"Time: {entry['timestamp']} | Value: {entry.get('M100FI')} | Quality: {entry.get('M100FI_quality')}")
 
-
+"""
 ## --- plant_name = "Stiles"
 tabular_data = ceds.soap_api_iess_request_tabular(plant_name = "Stiles", idcs = ["I-0300A"])
 data = ceds.get_tabular_as_dict(tabular_data)
 for entry in data:
     print(f"Time: {entry['timestamp']} | Value: {entry.get('I-0300A')} | Quality: {entry.get('I-0300A_quality')}")
+"""
 
 # ------ Sending to a third party, RJN -----------
 
@@ -34,13 +35,14 @@ print(f"rjn_base_url = {rjn_base_url}")
 rjn_client_id = da.get_secret(service = service, item = "username", fail = True)
 rjn_password = da.get_secret(service = service, item = "password", fail = True)
 
+"""
 crjn = ClientRjn(api_url = rjn_base_url) # u_rjn, p_rjn
 bool_session = crjn.login_to_session(
     client_id = rjn_client_id,
     password = rjn_password)
 
 print(f"bool_session = {bool_session}")
-
+"""
 """
 bool_transmit = crjn.send_data_to_rjn(session = session, 
                       base_url =  rjn_base_url, 
