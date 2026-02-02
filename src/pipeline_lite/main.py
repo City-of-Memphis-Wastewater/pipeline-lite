@@ -35,14 +35,13 @@ print(f"rjn_base_url = {rjn_base_url}")
 rjn_client_id = da.get_secret(service = service, item = "username", fail = True)
 rjn_password = da.get_secret(service = service, item = "password", fail = True)
 
-"""
 crjn = ClientRjn(api_url = rjn_base_url) # u_rjn, p_rjn
 bool_session = crjn.login_to_session(
     client_id = rjn_client_id,
     password = rjn_password)
 
 print(f"bool_session = {bool_session}")
-"""
+
 """
 bool_transmit = crjn.send_data_to_rjn(session = session, 
                       base_url =  rjn_base_url, 
