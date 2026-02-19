@@ -5,7 +5,8 @@ description = "Leave the skeletons in the pipeline-eds closet."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dworshak-access>=0.1.19",
+    "dworshak-secret>=1.2.10",
+    "dworshak-prompt>=0.2.20",
     "pipeline-eds>=0.4.31",
     "pyhabitat>=1.1.25",
 ]
@@ -26,6 +27,12 @@ dev = [
 [project.optional-dependencies]
 dev = [
     "uv>=0.5.0; python_version >= '3.8'"
+]
+crypto = [
+    "cryptography>=46.0.3",
+    "dworshak-secret[crypto]",
+    "dworshak-prompt[crypto]",
+    "pipeline-eds[crypto]",
 ]
 
 [project.scripts]
